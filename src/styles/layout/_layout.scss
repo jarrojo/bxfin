@@ -1,0 +1,21 @@
+html,
+body,
+.page {
+  height: 100%; /* needed for proper layout */
+}
+
+body {
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f5f7;
+}
+
+.container {
+  flex: 1 1 auto;
+  position: relative; /* need this to position inner content */
+  overflow-y: auto;
+}

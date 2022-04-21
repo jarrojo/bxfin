@@ -1,0 +1,30 @@
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: red;
+
+  &__dashboard {
+    background: url("../../assets/icons/dashboard.svg") no-repeat;
+  }
+
+  &__profits {
+    background: url("../../assets/icons/profits.svg") no-repeat;
+  }
+
+  &__deals {
+    background: url("../../assets/icons/tag.svg") no-repeat;
+  }
+
+  &__details {
+    background: url("../../assets/icons/tag.svg") no-repeat;
+  }
+
+  &__access {
+    background: url("../../assets/icons/key.svg") no-repeat;
+  }
+
+  &__details {
+    background: url("../../assets/icons/pencil.svg") no-repeat;
+  }
+}

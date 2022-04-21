@@ -1,0 +1,51 @@
+.entity-filter {
+  background-color: #fff;
+  padding: 1rem;
+
+  &__table {
+    width: 100%;
+    font-size: 1rem;
+    border-spacing: 0;
+    margin-top: 0.5rem;
+
+    thead {
+      background-color: #f2f4f7;
+      border-top: 2px solid #f1f1f1;
+      border-bottom: 2px solid #f1f1f1;
+      th {
+        text-align: right;
+        padding: 0.75rem;
+        color: black;
+        border-top: 1px solid #f1f1f1;
+        border-bottom: 1px solid #f1f1f1;
+      }
+    }
+    tbody {
+      th {
+        text-align: left;
+        padding: 0.75rem;
+        border-bottom: 1px solid #f1f1f1;
+      }
+      td {
+        text-align: right;
+        padding: 0.75rem;
+        border-bottom: 1px solid #f1f1f1;
+      }
+    }
+    tfoot {
+      background-color: #a4a7b6;
+      color: #fff;
+      text-align: right;
+      font-weight: 700;
+      th {
+        text-align: left;
+        padding: 0.75rem;
+        border-bottom: 1px solid #f1f1f1;
+      }
+      td {
+        padding: 0.75rem;
+        border-bottom: 1px solid #f1f1f1;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 1rem;
+  span {
+    font-size: 1rem;
+  }
+  .svg-icon {
+    margin-right: 0.5rem;
+  }
+}

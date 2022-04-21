@@ -1,0 +1,14 @@
+<section>
+  <div class="headers-container">
+    <div class="card" *ngFor="let item of headers$ | async">
+      <span class="card__content-type">{{ item?.header }}</span>
+      <span class="card__content-value">{{ item?.value | currency: "$" }}</span>
+    </div>
+  </div>
+  <app-entity-filter
+    *ngIf="pageModel$ | async as pageModel"
+    [relationship]="pageModel?.relationship!"
+    [relationshipTotal]="pageModel?.relationshipTotal!"
+    [relationshipIncome]="pageModel?.relationshipIncome!"
+  ></app-entity-filter>
+</section>

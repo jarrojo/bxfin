@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: #a7adb4;
+  border: none;
+  cursor: pointer;
+  &-primary {
+    background-color: #081e46;
+    color: #fff;
+  }
+}

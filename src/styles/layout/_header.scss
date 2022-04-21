@@ -1,0 +1,36 @@
+.header {
+  flex: 0 0 auto;
+  background-color: #f4f5f7;
+  border-bottom: 1.5px solid #e0e1e1;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    li {
+      padding: 0.5rem;
+      &.active-link {
+        list-style-type: none;
+        list-style-position: inside;
+
+        border-bottom: 5px solid #2152c6;
+
+        a {
+          font-weight: 700;
+        }
+        a,
+        svg {
+          color: #2152c6;
+        }
+      }
+      list-style: none;
+      a {
+        color: #a7adb4;
+        text-decoration: none; /* no underline */
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<section class="entity-filter">
+  <div class="actions-btn">
+    <button type="button" *ngIf="relationship" class="btn btn-primary">
+      {{ relationship?.name }}</button
+    ><button
+      type="button"
+      *ngFor="let item of relationship?.children"
+      class="btn"
+    >
+      {{ item.name }}
+    </button>
+  </div>
+  <table *ngIf="relationshipTotal" class="entity-filter__table">
+    <thead>
+      <th style="text-align: left"><input type="checkbox" /></th>
+      <th colspan="4" style="text-align: left">Category</th>
+      <ng-container *ngFor="let item of relationshipTotal">
+        <th>Revenue</th>
+        <th>
+          {{ item.periodLabel }}
+          <br />
+          ROE
+        </th>
+      </ng-container>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let item of relationshipIncome?.groups">
+        <tr>
+          <th style="text-align: left"><input type="checkbox" /></th>
+          <td colspan="4" style="text-align: left">{{ item.groupLabel }}</td>
+          <ng-container *ngFor="let period of item.periods">
+            <td>{{ period?.results?.revenue || 0 | currency: "$" }}</td>
+            <td>{{ period?.results?.roe || 0 | percent }}</td>
+          </ng-container>
+        </tr>
+      </ng-container>
+    </tbody>
+    <tfoot>
+      <th></th>
+      <td colspan="4" style="text-align: left">Total</td>
+      <ng-container *ngFor="let period of relationshipTotal">
+        <td>{{ period?.results?.revenue || 0 | currency: "$" }}</td>
+        <td>{{ period?.results?.roe || 0 | percent }}</td>
+      </ng-container>
+    </tfoot>
+  </table>
+</section>
